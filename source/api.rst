@@ -345,7 +345,6 @@ Updating an article
           -H "Content-Type: application/json" \
           -H 'Authorization: Bearer TOKEN' \
           -d '{
-              "external_id": "ARTICLE_ID",
               "source_url": "ARTICLE_URL",
               "language":  "en",
               "published": "2010-01-02T15:04:05Z",
@@ -367,7 +366,6 @@ Updating an article
         }
 
         data = {
-            "external_id": "ARTICLE_ID",
             "source_url": "ARTICLE_URL",
             "language":  "en",
             "published": "2010-01-02T15:04:05Z",
@@ -389,7 +387,6 @@ Updating an article
    .. code-block:: go
 
       type Payload struct {
-       ExternalID         string    `json:"external_id"`
        SourceURL          string    `json:"source_url"`
        Language           string    `json:"language"`
        Published          time.Time `json:"published"`
@@ -427,8 +424,6 @@ Updating an article
 
 +--------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field              | Usage      | Description                                                                                                                                                                                                                                   |
-+====================+============+===============================================================================================================================================================================================================================================+
-| ``external_id``    | required   | The ID of the article as defined in your system. It must be unique (within a given language) within your own system.                                                                                                                          |
 +--------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``source_url``     | required   | The link to the article as published on your website. Place your homepage url if the article is not published anywhere else.                                                                                                                  |
 +--------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
