@@ -49,8 +49,8 @@ msgid ""
 msgstr ""
 "A API pode ser usada pelos parceiros para configurar os seus próprios "
 "serviços, de modo que o conteúdo publicado nos seus sites seja "
-"automaticamente enviado para o OneFootball e consequentemente seja lido "
-"pelos utilizadores do OneFootball."
+"automaticamente enviado para o OneFootball e, consequentemente, seja lido "
+"pelos usuários do OneFootball."
 
 #: ../../api.rst:13 4b7942cee95246b587c17c5d99ef871f
 msgid ""
@@ -125,7 +125,7 @@ msgid ""
 msgstr ""
 "Na documentação, tentamos fornecer exemplos de código que podem ser "
 "copiados, colados e ajustados, em vez de descrever tudo em palavras. Por "
-"favor, use estes exemplos como referência."
+"favor, use esses exemplos como referência."
 
 #: ../../api.rst:46 952c9d8186d147acb65d97a4718fdbdf
 msgid "Testing"
@@ -138,9 +138,9 @@ msgid ""
 "ensure that the respective article *will not* be visible to OneFootball "
 "users."
 msgstr ""
-"Ao testar a publicação e atualização de notícias, use o ``draft`` booleano "
+"Ao testar a publicação e a atualização de artigos, use o ``draft`` booleano "
 "opcional. Um request enviado como ``draft`` a ``TRUE`` garantirá que a "
-"respectiva notícia *não* fique visível para os utilizadores do OneFootball."
+"respectiva notícia *não* fique visível para os usuários do OneFootball."
 
 #: ../../api.rst:50 ddbfbafd455c4d1a832fca3fa94faad1
 msgid ""
@@ -149,7 +149,7 @@ msgid ""
 "``draft`` parameter or set ``draft`` to ``FALSE``."
 msgstr ""
 "Quando você estiver pronto para usar o seu serviço em produção e enviar "
-"notícias reais para serem vistas pelos utilizadores do OneFootball, você "
+"notícias reais para serem vistas pelos usuários do OneFootball, você "
 "pode omitir o parâmetro ``draft`` ou definir o ``draft`` como ``FALSE``."
 
 #: ../../api.rst:55 9dc74b48b9244ee7b75893467355e296
@@ -257,7 +257,7 @@ msgid ""
 "and should therefore select the correct integration for the correct "
 "website."
 msgstr ""
-"Para publicar conteúdo, você deve especificar qual a integração a que o "
+"Para publicar conteúdo, você deve especificar qual é a integração a que o "
 "conteúdo pertence. Na maioria dos casos, a sua conta terá apenas uma "
 "integração com o OneFootball. No entanto, contas com vários sites "
 "diferentes que publicam conteúdo no OneFootball podem precisar realizar "
@@ -290,18 +290,18 @@ msgid ""
 "article to OneFootball."
 msgstr ""
 "Depois de configurar e ter um token de autenticação, você pode publicar "
-"uma noticía no OneFootball."
+"um artigo no OneFootball."
 
 #: ../../api.rst:187 c22747c07d684c12a46cc9042f508513
 msgid "Publishing an article"
-msgstr "Publicando uma notícia"
+msgstr "Publicando uma artigo"
 
 #: ../../api.rst:189 33ab0318071e414293baa20d9159c9ae
 msgid ""
 "Using a valid authentication token, you can publish an article by sending "
 "a ``POST`` request to the posts entity endpoint."
 msgstr ""
-"Usando um token de autenticação válido, você pode publicar uma notícia "
+"Usando um token de autenticação válido, você pode publicar um artigo "
 "enviando um request ``POST``."
 
 #: ../../api.rst:191 ../../api.rst:373 ../../api.rst:497
@@ -313,7 +313,7 @@ msgstr "Para isso, siga o exemplo abaixo e faça o seguinte:"
 #: ../../api.rst:194 005aed43de0d447d84d84a22f988fe36
 msgid "Set all article attributes as shown in the example below."
 msgstr ""
-"Defina todos os atributos da notícia como mostrado no exemplo abaixo."
+"Defina todos os atributos do artigo como mostrado no exemplo abaixo."
 
 #: ../../api.rst:286 ../../api.rst:468 71141827956d413bb75fea4c0fefad78
 #: f3bd061eec8746dbac48dcb70b50b6c3
@@ -356,7 +356,7 @@ msgid ""
 "The ID of the article as defined in your system. It must be unique (within "
 "a given language) within your own system."
 msgstr ""
-"O ID da notícia conforme definido no seu sistema. Ele deve ser único (em "
+"O ID do artigo conforme definido no seu sistema. Ele deve ser único (em "
 "um determinado idioma) dentro de seu próprio sistema."
 
 #: ../../api.rst:290 ../../api.rst:472 f6633932a3ca47a0b2ad5a8a1fd07d87
@@ -370,8 +370,8 @@ msgid ""
 "The ID of the integration to which the article belongs as defined by "
 "Onefootball."
 msgstr ""
-"O ID da integração à qual a notícia pertence, conforme definido pelo "
-"OneFootball."
+"O ID da integração à que pertence o artigo, conforme definido pelo ""
+"OneFootball"
 
 #: ../../api.rst:292 ../../api.rst:474 06c8d62ade8444dab2c1f52e7a51e532
 #: a35d54b7595a444b88244933ad5259d7
@@ -384,8 +384,8 @@ msgid ""
 "The link to the article as published on your website. Place your homepage "
 "url if the article is not published anywhere else."
 msgstr ""
-"O link para a notícia publicada no seu site. Coloque o URL de sua página "
-"inicial se a notícia não estiver publicada em nenhum outro lugar."
+"O link para o artigo publicado no seu site. Coloque o URL de sua página "
+"inicial se o artigo não estiver publicado em nenhum outro lugar."
 
 #: ../../api.rst:294 ../../api.rst:476 ea8520523ace44e998dd224c73e5de36
 #: ef790654176841bfae83e64ccadb0538
@@ -398,7 +398,7 @@ msgid ""
 "The language of the article. Valid choices are ``en``, ``de``, ``es``, "
 "``fr``, ``br``, and ``it``."
 msgstr ""
-"O idioma da notícia. Escolhas válidas são ``en``, ``de``, ``es``, ``fr``, "
+"O idioma do artigo. Escolhas válidas são ``en``, ``de``, ``es``, ``fr``, "
 "``br`` e ``it``."
 
 #: ../../api.rst:296 ../../api.rst:478 a2a81ba1e6fa460391b3e0fdcd4d5dfa
@@ -411,7 +411,7 @@ msgstr ""
 msgid ""
 "The time that the article was published. If in doubt, use the current time."
 msgstr ""
-"A hora em que a notícia foi publicada. Em caso de dúvida, use a hora atual."
+"A hora em que o artigo foi publicado. Em caso de dúvida, use a hora atual."
 
 #: ../../api.rst:298 ../../api.rst:480 8ab3e6eb269d42dd83b44acc66531075
 #: 8fd5e86c3c544fe2ae1509e036451438
@@ -424,7 +424,7 @@ msgid ""
 "The time that the article was last updated. If in doubt, use the current "
 "time."
 msgstr ""
-"A hora em que a notícia foi atualizada pela última vez. Em caso de dúvida, "
+"A hora em que o artigo foi atualizado pela última vez. Em caso de dúvida, "
 "use a hora atual."
 
 #: ../../api.rst:300 ../../api.rst:482 eb3acbe6d9e744af9044d647826686be
@@ -440,7 +440,7 @@ msgid ""
 "technical-documentation/html-guidelines>`_ for important details on "
 "acceptable HTML content."
 msgstr ""
-"O conteúdo da notícia, que deve estar em HTML corretamente formatado. "
+"O conteúdo do artigo, que deve estar em HTML corretamente formatado. "
 "Consulte `este link <https://static.onefootball.com/onefootball-network/"
 "technical-documentation/html-guidelines>`_ para obter detalhes sobre o "
 "conteúdo HTML aceitável."
@@ -453,7 +453,7 @@ msgstr ""
 #: ../../api.rst:302 ../../api.rst:484 09c1d2b8ee1b4c04a468646041e0b85b
 #: 479df64e63ca42e99a6a86c94a463e36
 msgid "The title of the article. The title cannot be an empty string."
-msgstr "O título da notícia. O título não pode ser uma string vazia."
+msgstr "O título do artigo. O título não pode ser uma string vazia."
 
 #: ../../api.rst:304 ../../api.rst:486 be458ff33bf144589c7df986e081bfe1
 #: dd3af9db64434d4faa846e66a7727fc8
@@ -475,7 +475,7 @@ msgid ""
 msgstr ""
 "URL da imagem em destaque na notícia. Se este campos for especificado, "
 "``image_width`` e ``image_height`` também devem ser fornecidos (largura e "
-"altura da imagem em píxeis)."
+"altura da imagem em pixels)."
 
 #: ../../api.rst:306 ../../api.rst:488 188a7c0550994b02aed1d6529aeb0d0f
 #: 758728f18d464398a99b5ac8d60ddd3b
@@ -489,9 +489,9 @@ msgid ""
 "the article will not be made visible to OneFootball users. If not povided, "
 "the article will by default be made available to OneFootball users."
 msgstr ""
-"Um booleano opcional para ser usado em testes. Se configurado como true, a "
-"notícia não ficará visível para os utilizadores do OneFootball. Se não for "
-"fornecido, a matéria será predefinida como disponível para os utilizadores "
+"Um booleano opcional para ser usado em testes. Se configurado como true, o "
+"artigo não ficará visível para os usuários do OneFootball. Se não for "
+"fornecido, a matéria será predefinida como disponível para os usuários "
 "do OneFootball."
 
 #: ../../api.rst:312 f5322040854944f283e53955acaf491d
@@ -511,12 +511,12 @@ msgid ""
 "In order to update or delete an article on OneFootball, you will first "
 "need to get the OneFootball post ID for that article."
 msgstr ""
-"Para atualizar ou excluir uma notícia no OneFootball, você precisará de "
+"Para atualizar ou excluir um artigo no OneFootball, você precisará de "
 "obter o ID da mesma."
 
 #: ../../api.rst:320 bfa4b44d574c4d76a0724f8682152212
 msgid "Obtaining an article's post ID"
-msgstr "Obtendo um ID de uma notícia"
+msgstr "Obtendo um ID de um artigo"
 
 #: ../../api.rst:322 b001d7e125d64956a68372b4da8be9ca
 msgid ""
@@ -524,7 +524,7 @@ msgid ""
 "in update or delete operations, take the example below and do the "
 "following:"
 msgstr ""
-"Para obter o ID de uma notícia no OneFootball siga o exemplo abaixo e faça "
+"Para obter o ID de um artigo no OneFootball siga o exemplo abaixo e faça "
 "o seguinte:"
 
 #: ../../api.rst:324 feb50f9f923f457cae19228599cf49a1
@@ -533,12 +533,12 @@ msgid ""
 "system that you provided when publishing the article. This should be "
 "encoded if necessary."
 msgstr ""
-"Substitua o EXTERNAL_ID pelo ID da notícia no seu sistema, que você "
+"Substitua o EXTERNAL_ID pelo ID do artigo no seu sistema, que você "
 "forneceu ao publicar a notícia. Isto deve ser codificado se necessário."
 
 #: ../../api.rst:369 a9e64ccac49f4708b8e2835bfe9b0958
 msgid "Updating an article"
-msgstr "Atualizando uma notícia"
+msgstr "Atualizando um artigo"
 
 #: ../../api.rst:371 a969744cfee641bd8541dbeae30dcb99
 msgid ""
@@ -546,15 +546,15 @@ msgid ""
 "article is updated on OneFootball, use the ``PUT`` method of the post "
 "entity endpoint."
 msgstr ""
-"Em certas ocasiões, você poderá editar uma notícia. Para garantir que esta "
-"é atualizada no OneFootball, use o método ``PUT``."
+"Em certas ocasiões, você poderá editar um artigo. Para garantir que ele seja "
+"atualizado no OneFootball, use o método ``PUT``."
 
 #: ../../api.rst:375 51ded9a6bbc1425fa9776a3de662f883
 msgid ""
 "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article "
 "you want to update (see above for how to obtain this)."
 msgstr ""
-"Substitua ``POST_ID`` no URL pelo ID da notícia que você deseja atualizar "
+"Substitua ``POST_ID`` no URL pelo ID do artigo que você deseja atualizar "
 "(veja acima como obtê-lo)."
 
 #: ../../api.rst:377 f66cc4c6da2c4647b5c4ede4854ca6f5
@@ -562,19 +562,19 @@ msgid ""
 "Set all article attributes as shown in the example below. Note that all "
 "attributes will overwrite existing values."
 msgstr ""
-"Defina todos os atributos da notícia como mostrado no exemplo abaixo. "
+"Defina todos os atributos do artigo como mostrado no exemplo abaixo. "
 "Observe que todos os atributos substituirão os valores existentes."
 
 #: ../../api.rst:493 1356dea39fc144a5a58c5be8c5d4306f
 msgid "Deleting an article"
-msgstr "Excluindo uma notícia"
+msgstr "Excluindo um artigo"
 
 #: ../../api.rst:495 7acb80b3e16940ff85a7f735a5347663
 msgid ""
 "You can also delete articles from OneFootball using the ``DELETE`` method "
 "of the posts endpoint."
 msgstr ""
-"Você também pode excluir notícias do OneFootball usando o método "
+"Você também pode excluir artigos do OneFootball usando o método "
 "``DELETE``."
 
 #: ../../api.rst:499 1259e714606848f9a34d5edf8f43d3df
@@ -582,5 +582,5 @@ msgid ""
 "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article "
 "you want to delete (see above for how to obtain this)"
 msgstr ""
-"Substitua ``POST_ID`` pelo ID da notícia que você deseja apagar (veja "
+"Substitua ``POST_ID`` pelo ID do artigo que você deseja apagar (veja "
 "acima como obtê-lo)."
