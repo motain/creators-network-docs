@@ -9,23 +9,23 @@ msgstr ""
 "Project-Id-Version: OneFootball Network API\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-28 15:23+0200\n"
-"PO-Revision-Date: 2020-07-28 18:11+0200\n"
+"PO-Revision-Date: 2020-07-29 17:04+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: es_ES\n"
+"Language: it\n"
 "X-Generator: Poedit 2.4\n"
 
 #: ../../api.rst:2 54781cc98e48455294130db499cd729f
 msgid "OneFootball Network API"
-msgstr "OneFootball Network API"
+msgstr "API OneFootball Network"
 
 #: ../../api.rst:5 de2649591a5d4c0a903f065b596b843a
 msgid "Introduction"
-msgstr "Introducción"
+msgstr "Introduzione"
 
 #: ../../api.rst:7 0e83d3f5cef6420bb1c2a1cbb3bfb226
 msgid ""
@@ -35,10 +35,10 @@ msgid ""
 "and delete articles that they have already published to the OneFootball "
 "platform."
 msgstr ""
-"OneFootball es la plataforma de fútbol digital líder en el mundo. La API "
-"de la OneFootball Network permite a los socios de contenido publicar "
-"artículos en la propia plataforma. También permite a los socios actualizar "
-"y eliminar artículos que Ya han publicado en la plataforma."
+"OneFootball è la più importante piattaforma digitale di calcio a livello "
+"mondiale. L’API OneFootball Network consente ai content partner di "
+"OneFootball di pubblicare articoli sulla piattaforma e di aggiornare e "
+"cancellare gli articoli che hanno già pubblicato."
 
 #: ../../api.rst:10 0ed2b013298c4725bab4c28dcdb4835f
 msgid ""
@@ -46,10 +46,10 @@ msgid ""
 "content published on their sites is automatically sent to OneFootball and "
 "natively integrated onto the OneFootball platform for OneFootball users."
 msgstr ""
-"Los socios pueden utilizar la API para configurar sus propios servicios de "
-"modo que el contenido publicado en sus sitios se envíe automáticamente a "
-"OneFootball y se integre de forma nativa en la plataforma OneFootball para "
-"los usuarios de OneFootball."
+"L’API può essere utilizzato dai partner per configurare i propri servizi, "
+"di modo tale che il contenuto pubblicato sui loro siti venga "
+"automaticamente inviato a OneFootball e nativamente integrato sulla "
+"piattaforma a beneficio degli utenti."
 
 #: ../../api.rst:13 4b7942cee95246b587c17c5d99ef871f
 msgid ""
@@ -57,51 +57,51 @@ msgid ""
 "and only authorized content partners are able to use the OneFootball "
 "Network API."
 msgstr ""
-"Por favor tenga en cuenta que la OneFootball Network es una plataforma "
-"cerrada, solo para invitados, y solo los socios de contenido autorizados "
-"pueden usar la API de la red OneFootball."
+"Si prega di notare che OneFootball Network è una piattaforma chiusa, "
+"accessibile esclusivamente su invito e solo i content partner autorizzati "
+"possono utilizzare l’API OneFootball Network."
 
 #: ../../api.rst:17 c41eab6648c348e08d54bed506a6fe00
 msgid "Conventions"
-msgstr "Convenciones"
+msgstr "Convenzioni"
 
 #: ../../api.rst:19 e99335c5660d43e8a4915c327aee9e4c
 msgid ""
 "Before you get started, please note the conventions listed here, which "
 "apply throughout the API."
 msgstr ""
-"Antes de empezar, tenga en cuenta las convenciones aquí enumeradas, las "
-"cuales se aplican en toda la API."
+"Prima d’iniziare, si prega di tenere presenti le convenzioni elencate di "
+"seguito, le quali trovano applicazione nell’ambito dell’API."
 
 #: ../../api.rst:23 1617ca2a01d549c7921da521f2ae71fa
 msgid "Schema"
-msgstr "Esquema"
+msgstr "Schema"
 
 #: ../../api.rst:25 73eacf9fe8264fd8a52e5906abca0797
 msgid ""
 "All API access is over HTTPS. All data is sent and received in JSON format."
 msgstr ""
-"Todo el acceso a la API se realiza a través de HTTPS. Todos los datos se "
-"envían y reciben en formato JSON."
+"Ogni accesso API avviene tramite HTTPS. Tutti i dati vengono inviati e "
+"ricevuti in formato JSON."
 
 #: ../../api.rst:27 e07537e279e44beaae7d1a005b6b1366
 msgid "Access is from the following URL: https://network-api.onefootball.com"
 msgstr ""
-"El acceso es desde la siguiente URL: https://network-api.onefootball.com"
+"L’accesso avviene attraverso i seguenti URL: https://network-api."
+"onefootball.com."
 
 #: ../../api.rst:31 7e0f0ac2ef634e6eaaebe63161e7675e
 msgid "Time format"
-msgstr "Formato de tiempo"
+msgstr "Formato data"
 
 #: ../../api.rst:33 b24bb9cae47e4baa81251a795fe14bd4
 msgid "All timestamps return in ISO 8601 format ``YYYY-MM-DDTHH:MM:SSZ``."
 msgstr ""
-"Todas las marcas de tiempo están en formato ISO 8601 ``YYYY-MM-DDTHH:MM:"
-"SSZ``."
+"Ogni data viene riportata in formato in ISO 8601 ``YYYY-MM-DDTHH:MM:SSZ``."
 
 #: ../../api.rst:36 0a520d2a079a4e56bbf680bb6eaa79ec
 msgid "Authentication"
-msgstr "Autentificación"
+msgstr "Autenticazione"
 
 #: ../../api.rst:38 3e3abfe95ebf42a9a083e2a6f53f5e43
 msgid ""
@@ -109,13 +109,13 @@ msgid ""
 "header. The value must be a ``Bearer`` token acquired during the login "
 "process."
 msgstr ""
-"Las solicitudes que requieren autenticación deben proporcionar un "
-"encabezado ``Authorization``. El valor debe ser un token ``Bearer`` "
-"adquirido durante el proceso de inicio de sesión."
+"Le richieste che necessitano di autenticazione devono disporre della "
+"dicitura ``Authorization``. Occorrerà poi l’utilizzo di un token "
+"``Bearer`` acquisito durante il processo di login."
 
 #: ../../api.rst:41 42016c7b07c84402b2d9220e9dc16094
 msgid "Examples"
-msgstr "Ejemplos"
+msgstr "Esempi"
 
 #: ../../api.rst:43 5303528507d1448e8de26533bb68bd12
 msgid ""
@@ -123,13 +123,13 @@ msgid ""
 "be copied, pasted and adjusted rather than describing everything in words. "
 "Please look to the examples as a reference."
 msgstr ""
-"En la documentación, hemos tratado de dar ejemplos de fragmentos de código "
-"que se pueden copiar, pegar y ajustar en lugar de describir todo en "
-"palabras. Por favor, mire los ejemplos como referencia."
+"Nella documentazione, anziché descrivere tutto a parole, abbiamo preferito "
+"dare esempi di porzioni di codice che possono essere copiati, incollati e "
+"adattati. Si prega di fare riferimento a tali esempi."
 
 #: ../../api.rst:46 952c9d8186d147acb65d97a4718fdbdf
 msgid "Testing"
-msgstr "Prueba"
+msgstr "Testing"
 
 #: ../../api.rst:48 3d45ba7eddc1498b9b772f9a4c431c38
 msgid ""
@@ -138,10 +138,10 @@ msgid ""
 "ensure that the respective article *will not* be visible to OneFootball "
 "users."
 msgstr ""
-"Al probar la publicación y actualización de artículos, utilice el "
-"``draft`` booleano opcional. Una solicitud enviada con ``draft`` como "
-"``TRUE`` garantizará que el artículo respectivo no sea visible para los "
-"usuarios de OneFootball."
+"Durante il test relativo alla pubblicazione e all’aggiornamento degli "
+"articoli usate la varabile booleana opzionale ``draft``. Una richiesta "
+"inviata con un ``draft`` ``TRUE`` garantirà che l’articolo corrispondente "
+"non sia visibile agli utenti OneFootball."
 
 #: ../../api.rst:50 ddbfbafd455c4d1a832fca3fa94faad1
 msgid ""
@@ -149,33 +149,35 @@ msgid ""
 "articles to be seen by OneFootball users, you can either leave out the "
 "``draft`` parameter or set ``draft`` to ``FALSE``."
 msgstr ""
-"Cuando esté listo para usar su servicio en producción y enviar artículos "
-"reales para que los vean los usuarios de OneFootball, puede omitir el "
-"parámetro ``draft`` o establecer ``draft`` como ``FALSE``."
+"Una volta che siete pronti a usare il vostro servizio in fase di "
+"produzione e a inviare articoli veri che possano essere visualizzati dagli "
+"utenti di OneFootball, potrete tralasciare il parametro ``draft`` oppure "
+"impostare ``draft`` su ``FALSE``."
 
 #: ../../api.rst:55 9dc74b48b9244ee7b75893467355e296
 msgid "Getting set up"
-msgstr "Cómo configurar"
+msgstr "Inizio del set up"
 
 #: ../../api.rst:57 a31eb9c03f1d43e5a5a6189fd5d646b1
 msgid ""
 "In order to publish, update or delete content on OneFootball via the "
 "OneFootball Network API, you must first do the following:"
 msgstr ""
-"Para publicar, actualizar o eliminar contenido en OneFootball a través de "
-"la API de la red OneFootball, primero debe hacer lo siguiente:"
+"Per poter pubblicare, aggiornare o cancellare contenuti su OneFootball "
+"tramite l’API OneFootball Network, sarà prima necessario seguire questi "
+"passi:"
 
 #: ../../api.rst:59 c5613523b2e5466e954631aa09da334b
 msgid "Complete the registration for your OneFootball Network account."
-msgstr "Complete el registro para su cuenta en la OneFootball Network."
+msgstr "Completate la registrazione del vostro account OneFootball Network;"
 
 #: ../../api.rst:60 936e25d6622c4c38a53a8573f907d350
 msgid ""
 "Use your login credentials to retrieve an authentication token that must "
 "be used for other requests."
 msgstr ""
-"Use sus credenciales de inicio de sesión para obtener un token de "
-"autentificación que debe usarse para otras solicitudes."
+"Usate le vostre credenziali per il login per ottenere un token di "
+"autenticazione che dovrà essere usato per altre richieste;"
 
 #: ../../api.rst:61 9b47a11e1c3849d5b2988c6b7ff641b7
 msgid ""
@@ -183,13 +185,13 @@ msgid ""
 "(note that many accounts will have only one website and therefore only one "
 "integration)."
 msgstr ""
-"Obtenga la ID de la integración en la que desea publicar contenido (tenga "
-"en consideración que muchas cuentas tendrán un solo sitio web y, por lo "
-"tanto, solo una integración)."
+"Recuperate l’ID dell’integrazione sotto la quale volete pubblicare i "
+"vostri contenuti (si noti che molti account avranno un solo sito web e "
+"pertanto un’unica integrazione)."
 
 #: ../../api.rst:65 e2c93a028b7f42f8bee0be802912618a
 msgid "Activating your OneFootball Network account"
-msgstr "Activación de su cuenta en la OneFootball Network"
+msgstr "Attivazione dell’account OneFootball Network"
 
 #: ../../api.rst:67 2f69dbbf184e4345b8b607d629a16674
 msgid ""
@@ -200,17 +202,17 @@ msgid ""
 "Make sure to complete the onboarding process in the portal before trying "
 "to publish content via the OneFootball Network API."
 msgstr ""
-"La OneFootball Network en una plataforma solo por invitación. Si está "
-"invitado a unirse y ha aceptado unirse, recibirá un correo electrónico de "
-"registro. Siga las instrucciones en el correo electrónico de registro, "
-"configure su contraseña y luego inicie sesión en el portal de la "
-"OneFootball Network. Asegúrese de completar el proceso de incorporación en "
-"el portal antes de intentar publicar contenido a través de la API de la "
-"OneFootball Network."
+"OneFootball Network è una piattaforma accessibile solo su invito. Se ne "
+"ricevete uno e avete dato il consenso a unirvi a noi, riceverete un’e-mail "
+"di registrazione. Si prega di seguire le istruzioni contenute nella "
+"stessa, impostare la propria password e procedere poi con il login sul "
+"portale OneFootball Network. Assicuratevi di completare la procedura di "
+"avviamento nel portale prima di provare a pubblicare il contenuto tramite "
+"l’API OneFootball Network."
 
 #: ../../api.rst:71 2269525838c94eb3aba7ceb8cec40348
 msgid "Retrieving an authentication token"
-msgstr "Obtener el token de autentificación"
+msgstr "Acquisizione del token di autenticazione"
 
 #: ../../api.rst:73 98182a975fd14a6785ff9ac5f646ed6d
 msgid ""
@@ -218,9 +220,9 @@ msgid ""
 "you can use the same email address and password credentials to obtain an "
 "authentication token for the OneFootball Network API."
 msgstr ""
-"Una vez que haya iniciado sesión con éxito en el portal de la OneFootball "
-"Network, puede usar la misma dirección de correo electrónico y contraseña "
-"para obtener un token de autenticación para la API de la red OneFootball."
+"Una volta effettuato correttamente l’accesso al portale OneFootball "
+"Network, potete usare le stesse credenziali (indirizzo e-mail e password) "
+"per ottenere un token di autenticazione per l’API OneFootball Network."
 
 #: ../../api.rst:75 7507b03395754d17818b8f0062facb99
 msgid ""
@@ -228,14 +230,14 @@ msgid ""
 "delete content via requests made to the OneFootball Network API. To "
 "acquire a token, send your login credentials as per the example below:"
 msgstr ""
-"Debe tener un token de autenticación válido para publicar, modificar o "
-"eliminar contenido a través de solicitudes realizadas a la API de la "
-"OneFootball Network. Para adquirir un token, envíe sus credenciales de "
-"inicio de sesión según el siguiente ejemplo:"
+"Occorre essere in possesso di un token di autenticazione valido per poter "
+"pubblicare, modificare o cancellare il contenuto tramite le richieste "
+"fatte all’API OneFootball Network. Per acquisire un token, inviate le "
+"vostre credenziali per il login seguendo l’esempio qui sotto:"
 
 #: ../../api.rst:129 df6aff02f07c446dbbdb4f5590305efd
 msgid "Refreshing an authentication token"
-msgstr "Actualizar un token de autentificación"
+msgstr "Riacquisizione di un token di autenticazione"
 
 #: ../../api.rst:131 10fbbbdcad364f4d8cf9c5970e647714
 msgid ""
@@ -243,13 +245,13 @@ msgid ""
 "After a token expires, repeat the process by using your login credentials "
 "to acquire a new one."
 msgstr ""
-"Cada token de autenticación es válido durante siete días después de su "
-"emisión. Después de que caduque un token, repita el proceso utilizando sus "
-"credenciales de inicio de sesión para adquirir uno nuevo."
+"Ogni token di autenticazione è valido per sette giorni dal suo rilascio. "
+"Una volta scaduto un token, ripetete il processo usando le vostre "
+"credenziali di login per 0ttenerne uno nuovo."
 
 #: ../../api.rst:135 0923c552891e437c865dd7e9b57fda25
 msgid "Listing all registered integrations"
-msgstr "Listado de todas las integraciones registradas"
+msgstr "Elenco di tutte le registrazioni integrate"
 
 #: ../../api.rst:137 0b896c268a00484ea1f3188433719b47
 msgid ""
@@ -260,20 +262,22 @@ msgid ""
 "and should therefore select the correct integration for the correct "
 "website."
 msgstr ""
-"Para publicar contenido, debe especificar a qué integraciones pertenece el "
-"contenido. En la mayoría de los casos, su cuenta solo tendrá una "
-"integración con OneFootball. Sin embargo, las cuentas con múltiples sitios "
-"web diferentes que publican contenido en OneFootball pueden tener "
-"múltiples integraciones y, por lo tanto, hay que seleccionar la "
-"integración correcta para el sitio web correcto."
+"Per pubblicare i contenuti è necessario specificare a quale delle vostre "
+"integrazioni appartiene il contenuto stesso. Nella maggior parte dei casi, "
+"il vostro account avrà una sola integrazione con OneFootball. Tuttavia, "
+"gli account ai quali sono associati diversi siti web che pubblicano "
+"contenuti su OneFootball potrebbero avere varie integrazioni: a quel punto "
+"dovranno quindi selezionare l’integrazione corretta per il sito in "
+"questione."
 
 #: ../../api.rst:139 11500148f56d4b87a3b9f071cf224b30
 msgid ""
 "You can retrieve a full list of your registered integrations on "
 "OneFootball by taking the example below and doing the following:"
 msgstr ""
-"Puede obtener una lista completa de sus integraciones registradas en "
-"OneFootball tomando el siguiente ejemplo y haciendo lo siguiente:"
+"Potrete acquisire una lista completa delle vostre integrazioni registrate "
+"su OneFootball facendo riferimento all’esempio qui sotto e facendo quanto "
+"segue:"
 
 #: ../../api.rst:141 ../../api.rst:193 ../../api.rst:325 ../../api.rst:376
 #: ../../api.rst:500 15424b63fd474a6cb546f180c3f43968
@@ -281,43 +285,45 @@ msgstr ""
 #: 978120c7e0fe4143b3bdb2e5e4d262d0 faee69706b0742ada414651b91bee70d
 msgid "Replace ``TOKEN`` in the header with your valid authentication token."
 msgstr ""
-"Reemplace ``TOKEN`` en el encabezado con su token de autentificación válido"
+"Sostituite ``TOKEN`` nell’intestazione con il vostro token di "
+"autenticazione valido."
 
 #: ../../api.rst:181 1e98647619994092bc1743bda72d8062
 msgid "Publishing content"
-msgstr "Publicar contenido"
+msgstr "Pubblicazione del contenuto"
 
 #: ../../api.rst:183 9d48da8d9a0b49d0851582014a636c7d
 msgid ""
 "Once you are set up and have an authentication token, you can publish an "
 "article to OneFootball."
 msgstr ""
-"Una vez que haya completado la configuración y tenga un token de "
-"autentificación, puede publicar un artículo en OneFootball."
+"Una volta completata la procedura iniziale e dopo aver acquisito un token "
+"di autenticazione, potrete pubblicare gli articoli su OneFootball."
 
 #: ../../api.rst:187 c22747c07d684c12a46cc9042f508513
 msgid "Publishing an article"
-msgstr "Publicar un artículo"
+msgstr "Pubblicazione di un articolo"
 
 #: ../../api.rst:189 33ab0318071e414293baa20d9159c9ae
 msgid ""
 "Using a valid authentication token, you can publish an article by sending "
 "a ``POST`` request to the posts entity endpoint."
 msgstr ""
-"Con un token de autenticación válido, puede publicar un artículo enviando "
-"una solicitud ``POST`` al punto final de la entidad de la publicación."
+"Utilizzando un token di autenticazione valido, potrete pubblicare un "
+"articolo inviando una richiesta POST all’endpoint delle entità post."
 
 #: ../../api.rst:191 ../../api.rst:373 ../../api.rst:497
 #: 0429234cee88425d904aef6a53c0674f 343a72c2269a466b90f630a31abdb2b5
 #: ba72fab5454a43ab917ba291d3f6c02c
 msgid "To do so, take the example below and do the following:"
-msgstr "Para hacerlo, use el siguiente ejemplo y haga lo siguiente"
+msgstr ""
+"A questo proposito, considerate l’esempio qui sotto e fate quanto segue:"
 
 #: ../../api.rst:194 005aed43de0d447d84d84a22f988fe36
 msgid "Set all article attributes as shown in the example below."
 msgstr ""
-"Establezca todos los atributos del artículo como se muestra en el "
-"siguiente ejemplo."
+"Impostate tutte le proprietà dell’articolo come mostrato nel seguente "
+"esempio."
 
 #: ../../api.rst:286 ../../api.rst:468 71141827956d413bb75fea4c0fefad78
 #: f3bd061eec8746dbac48dcb70b50b6c3
@@ -327,12 +333,12 @@ msgstr "Campo"
 #: ../../api.rst:286 ../../api.rst:468 7e5ed0e6b69d4f9abb1996ec27e29042
 #: dc1269c1a6dc41078fc4399f6882dcbc
 msgid "Usage"
-msgstr "Uso"
+msgstr "Utilizzo"
 
 #: ../../api.rst:286 ../../api.rst:468 ab634415e4024716b547ea581efba1f7
 #: e15ee21e0c474af5abf431035c038144
 msgid "Description"
-msgstr "Descripción"
+msgstr "Descrizione"
 
 #: ../../api.rst:288 ../../api.rst:470 179716d252bd492483df6dd9dce407c2
 #: c073d115c2e747ad9508f8f347621d30
@@ -352,7 +358,7 @@ msgstr ""
 #: bfd8fd0ec1c540728b56bd80163be8e4 da8b5baea7614272a80606f949ca085c
 #: e0ad72638f1d4a538c0227ce3b123ea8 f32751132dbb4c96802f43a46aa8481c
 msgid "required"
-msgstr "obligatorio"
+msgstr "richiesto"
 
 #: ../../api.rst:288 ../../api.rst:470 3c6ec553e74347cb836c65b6344ff323
 #: a64c8a7e1a5846a2a37dacc2a7af1c39
@@ -360,8 +366,9 @@ msgid ""
 "The ID of the article as defined in your system. It must be unique (within "
 "a given language) within your own system."
 msgstr ""
-"El ID del artículo como se define en su sistema. Debe ser único (dentro de "
-"un idioma determinado) dentro de su propio sistema."
+"L’ID dell’articolo così come definito nel vostro sistema. Deve essere "
+"diverso da qualsiasi altro (per una determinata lingua) all’interno del "
+"vostro sistema stesso."
 
 #: ../../api.rst:290 ../../api.rst:472 f6633932a3ca47a0b2ad5a8a1fd07d87
 #: fc604129286e4f9dac6afafac0f846fc
@@ -374,8 +381,8 @@ msgid ""
 "The ID of the integration to which the article belongs as defined by "
 "Onefootball."
 msgstr ""
-"El ID de la integración a la que pertenece el artículo según lo definido "
-"por Onefootball."
+"L’ ID dell’integrazione alla quale appartiene l’articolo, così come "
+"definito da OneFootball."
 
 #: ../../api.rst:292 ../../api.rst:474 06c8d62ade8444dab2c1f52e7a51e532
 #: a35d54b7595a444b88244933ad5259d7
@@ -388,8 +395,8 @@ msgid ""
 "The link to the article as published on your website. Place your homepage "
 "url if the article is not published anywhere else."
 msgstr ""
-"El enlace al artículo publicado en su sitio web. Coloque la URL de su "
-"página de inicio si el artículo no se publica en ningún otro lugar."
+"Il link all’articolo così come pubblicato sul vostro sito web. Indicate "
+"l’url della vostra homepage se l’articolo non è pubblicato altrove."
 
 #: ../../api.rst:294 ../../api.rst:476 ea8520523ace44e998dd224c73e5de36
 #: ef790654176841bfae83e64ccadb0538
@@ -402,8 +409,8 @@ msgid ""
 "The language of the article. Valid choices are ``en``, ``de``, ``es``, "
 "``fr``, ``br``, and ``it``."
 msgstr ""
-"El lenguaje del artículo. Las opciones válidas son ``en``, ``de``, ``es``, "
-"``fr``, ``br``, e ``it``."
+"La lingua dell’articolo. Potete scegliere tra ``en``, ``de``, ``es``, "
+"``fr``, ``br`` e ``it``."
 
 #: ../../api.rst:296 ../../api.rst:478 a2a81ba1e6fa460391b3e0fdcd4d5dfa
 #: e84063a16bf344bd9245eee2f558f641
@@ -415,8 +422,8 @@ msgstr ""
 msgid ""
 "The time that the article was published. If in doubt, use the current time."
 msgstr ""
-"La hora en que se publicó el artículo. En caso de duda, utilice la hora "
-"actual."
+"L’ora in cui è stato pubblicato l’articolo. Se non siete certi, usate "
+"l’ora attuale."
 
 #: ../../api.rst:298 ../../api.rst:480 8ab3e6eb269d42dd83b44acc66531075
 #: 8fd5e86c3c544fe2ae1509e036451438
@@ -429,8 +436,8 @@ msgid ""
 "The time that the article was last updated. If in doubt, use the current "
 "time."
 msgstr ""
-"La hora en que se actualizó el artículo por última vez. En caso de duda, "
-"utilice la hora actual."
+"L’ora in cui l’articolo è stato aggiornato per l’ultima volta. Se non "
+"siete certi, usate l’ora attuale."
 
 #: ../../api.rst:300 ../../api.rst:482 eb3acbe6d9e744af9044d647826686be
 #: fbda89bbaba24267afdebb088db1195c
@@ -445,10 +452,11 @@ msgid ""
 "technical-documentation/html-guidelines>`_ for important details on "
 "acceptable HTML content."
 msgstr ""
-"El contenido del artículo, que debe estar en formato correcto HTML. Por "
-"favor vea `este enlace<https://static.onefootball.com/onefootball-network/"
-"technical-documentation/html-guidelines>`_ para detalles importantes sobre "
-"contenido HTML aceptable."
+"Il contenuto dell’articolo, che dovrà avere una formattazione HTML "
+"impostata correttamente. Si prega di visualizzare `questo link <https://"
+"static.onefootball.com/onefootball-network/technical-documentation/html-"
+"guidelines>`_ per trovare dettagli importanti relativi a un contenuto HTML "
+"soddisfacente."
 
 #: ../../api.rst:302 ../../api.rst:484 4ff6d0fc31bf4d1893c0e2727c135365
 #: 93e8b4d434514d3780b29dc77735b22f
@@ -458,7 +466,7 @@ msgstr ""
 #: ../../api.rst:302 ../../api.rst:484 09c1d2b8ee1b4c04a468646041e0b85b
 #: 479df64e63ca42e99a6a86c94a463e36
 msgid "The title of the article. The title cannot be an empty string."
-msgstr "El título del artículo. El título no puede ser una fila vacía."
+msgstr "Il titolo dell’articolo. Questo campo deve essere compilato."
 
 #: ../../api.rst:304 ../../api.rst:486 be458ff33bf144589c7df986e081bfe1
 #: dd3af9db64434d4faa846e66a7727fc8
@@ -469,7 +477,7 @@ msgstr ""
 #: 2fe1f46de4bd4c678eb0449ff9b1d405 6a3d62e5650d4c64b40ec032f40e6781
 #: 76a33686d8f642809420282dbbb80e01 ffadd2f8e2934494aaee957236a2d56a
 msgid "optional"
-msgstr "opcional"
+msgstr "opzionale"
 
 #: ../../api.rst:304 ../../api.rst:486 a86e3e83373c4274b55c19bd4f52dd93
 #: ba967108fc1d45c19b2652cc58fd9e7f
@@ -478,9 +486,9 @@ msgid ""
 "provided, ``image_width`` and ``image_height`` should be provided as well "
 "(the image's width and height in pixels)."
 msgstr ""
-"Un campo opcional para la URL de la imagen destacada del artículo. Si se "
-"utiliza, se debe proporcionar image_width e image_height de la misma "
-"manera (el ancho y el alto de la imagen en píxeles)."
+"Un campo opzionale per l’URL relativo all’immagine in evidenza. In caso "
+"venga fornito, andranno indicate anche ``image_width`` e ``image_height`` "
+"(larghezza e altezza dell’immagine in pixel)."
 
 #: ../../api.rst:306 ../../api.rst:488 188a7c0550994b02aed1d6529aeb0d0f
 #: 758728f18d464398a99b5ac8d60ddd3b
@@ -494,34 +502,34 @@ msgid ""
 "the article will not be made visible to OneFootball users. If not povided, "
 "the article will by default be made available to OneFootball users."
 msgstr ""
-"Un booleano opcional para ser utilizado con fines de prueba. Si se "
-"establece como true, el artículo no será visible para los usuarios de "
-"OneFootball. Si no se proporciona, el artículo estará disponible de forma "
-"predeterminada para los usuarios de OneFootball. "
+"Una variabile booleana opzionale destinata a essere usata a scopo di test. "
+"Se impostata su ``true``, l’articolo non sarà visibile agli utenti di "
+"OneFootball. Nel caso non venga fornita, l’articolo sarà automaticamente "
+"visibile agli utenti OneFootball."
 
 #: ../../api.rst:312 f5322040854944f283e53955acaf491d
 msgid "Updating and deleting content"
-msgstr "Actualizar y eliminar contenido"
+msgstr "Aggiornamento e cancellazione del contenuto"
 
 #: ../../api.rst:314 21eecbdc9106499e97a40bd071e801f5
 msgid ""
 "Once your content is on OneFootball, you can manage your content by "
 "updating and deleting it."
 msgstr ""
-"Una vez que su contenido esté en OneFootball, puede administrarlo "
-"actualizándolo y eliminándolo."
+"Una volta che il vostro contenuto è su OneFootball, potrete gestirlo "
+"decidendo di aggiornarlo o cancellarlo."
 
 #: ../../api.rst:316 d768f75e047a4388a95c88a78db7414f
 msgid ""
 "In order to update or delete an article on OneFootball, you will first "
 "need to get the OneFootball post ID for that article."
 msgstr ""
-"Para actualizar o eliminar un artículo en OneFootball, primero deberá "
-"obtener la ID de publicación de OneFootball para ese artículo."
+"Per poter aggiornare o cancellare un articolo su OneFootball, dovrete "
+"prima ottenere l’ID post OneFootball per l’articolo in questione."
 
 #: ../../api.rst:320 bfa4b44d574c4d76a0724f8682152212
 msgid "Obtaining an article's post ID"
-msgstr "Cómo obtener la ID de publicación de un artículo"
+msgstr "Acquisizione dell’ID post di un articolo"
 
 #: ../../api.rst:322 b001d7e125d64956a68372b4da8be9ca
 msgid ""
@@ -529,9 +537,9 @@ msgid ""
 "in update or delete operations, take the example below and do the "
 "following:"
 msgstr ""
-"Para obtener el ID de publicación de OneFootball para un artículo a fin de "
-"poder consultarlo en las operaciones de actualización o eliminación, siga "
-"el ejemplo que está abajo y haga lo siguiente:"
+"Per 0ttenere l’ID post OneFootball per un articolo, di modo da poterlo "
+"utilizzare durante le operazioni di aggiornamento o cancellazione, fate "
+"riferimento all’esempio qui sotto e fate quanto segue:"
 
 #: ../../api.rst:324 feb50f9f923f457cae19228599cf49a1
 msgid ""
@@ -539,13 +547,13 @@ msgid ""
 "system that you provided when publishing the article. This should be "
 "encoded if necessary."
 msgstr ""
-"Reemplace ``EXTERNAL_ID`` en la URL con la id del artículo en su sistema, "
-"la cual usted proporcionó al publicar el artículo. Esto debe ser "
-"codificado de ser necesario."
+"Nell’URL sostituite ``EXTERNAL_ID`` con l’ID dell’articolo fornito al "
+"momento della pubblicazione. In caso di necessità, sarà opportuno fornirne "
+"una versione criptata;"
 
 #: ../../api.rst:369 a9e64ccac49f4708b8e2835bfe9b0958
 msgid "Updating an article"
-msgstr "Actualizar un artículo"
+msgstr "Aggiornamento di un articolo"
 
 #: ../../api.rst:371 a969744cfee641bd8541dbeae30dcb99
 msgid ""
@@ -553,43 +561,43 @@ msgid ""
 "article is updated on OneFootball, use the ``PUT`` method of the post "
 "entity endpoint."
 msgstr ""
-"Ocasionalmente, puede editar un artículo de su sitio. Para asegurarse de "
-"que este artículo se actualice en OneFootball, use el método ``PUT`` del "
-"punto final de la entidad de la publicación."
+"Occasionalmente vi potrebbe capitare di modificare un articolo dal vostro "
+"sito internet. Per assicurarvi che l’articolo in questione sia aggiornato "
+"su OneFootball, utilizzate il metodo ``PUT`` dell’endpoint delle entità "
+"post."
 
 #: ../../api.rst:375 51ded9a6bbc1425fa9776a3de662f883
 msgid ""
 "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article "
 "you want to update (see above for how to obtain this)."
 msgstr ""
-"Reemplace ``POST_ID`` en la URL con el ID de publicación de OneFootball "
-"del artículo que desea actualizar (consulte más arriba cómo obtenerla)."
+"Nell’URL sostituite ``POST_ID`` con l’ID post OneFootball dell’articolo "
+"che volete aggiornare (v. sopra per le informazioni su come ottenerlo)."
 
 #: ../../api.rst:377 f66cc4c6da2c4647b5c4ede4854ca6f5
 msgid ""
 "Set all article attributes as shown in the example below. Note that all "
 "attributes will overwrite existing values."
 msgstr ""
-"Establezca todos los atributos del artículo como se muestra en el "
-"siguiente ejemplo. Tenga en cuenta que todos los atributos sobrescribirán "
-"los valores existentes."
+"Impostate tutte le proprietà dell’articolo così come mostrato nell’esempio "
+"qui sotto. Si noti che esse sovrascriveranno i valori esistenti."
 
 #: ../../api.rst:493 1356dea39fc144a5a58c5be8c5d4306f
 msgid "Deleting an article"
-msgstr "Borrar un artículo"
+msgstr "Cancellazione di un articolo"
 
 #: ../../api.rst:495 7acb80b3e16940ff85a7f735a5347663
 msgid ""
 "You can also delete articles from OneFootball using the ``DELETE`` method "
 "of the posts endpoint."
 msgstr ""
-"También puede eliminar artículos de OneFootball utilizando el método "
-"``DELETE`` del punto final de la publicación."
+"È possibile anche cancellare gli articoli da OneFootball utilizzando il "
+"metodo ``DELETE`` relativo all’endpoint dei post."
 
 #: ../../api.rst:499 1259e714606848f9a34d5edf8f43d3df
 msgid ""
 "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article "
 "you want to delete (see above for how to obtain this)"
 msgstr ""
-"Reemplace ``POST_ID`` en la URL con el ID de publicación de OneFootball "
-"del artículo que desea eliminar (consulte más arriba cómo obtenerla)."
+"Nell’URL sostituite ``POST_ID`` con l’ID post OneFootball dell’articolo "
+"che volete cancellare (v. sopra per le informazioni su come ottenerlo)."

@@ -16,7 +16,7 @@ msgstr ""
 "Generated-By: Babel 2.8.0\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr_FR\n"
+"Language: fr\n"
 "X-Generator: Poedit 2.4\n"
 
 #: ../../api.rst:2 54781cc98e48455294130db499cd729f
