@@ -9,7 +9,7 @@ sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '0.2'
 
 extensions = [
     'sphinx.ext.todo',
