@@ -134,7 +134,7 @@ Refreshing an authentication token
 | Each authentication token is valid for seven days after it is issued. After a token expires, repeat the process by using your login credentials to acquire a new one.
 
 
-Publishing content
+Publishing articles
 ------------------
 
 | Once you are set up and have an authentication token, you can publish an article to OneFootball.
@@ -264,7 +264,7 @@ Publishing an article
 
 |
 
-Updating and deleting content
+Updating and deleting articles
 -----------------------------
 
 | Once your content is on OneFootball, you can manage your content by updating and deleting it.
@@ -489,3 +489,236 @@ Deleting an article
        // handle err
       }
       defer resp.Body.Close()
+
+
+Publishing videos
+------------------
+
+| Once you are set up and have an authentication token, you can publish a video to OneFootball.
+
+
+Publishing a video
+~~~~~~~~~~~~~~~~~~~~~
+
+| Using a valid authentication token, you can publish a video by sending a ``POST`` request to the videos entity endpoint.
+
+| To do so, take the example below and do the following:
+
+* Replace ``TOKEN`` in the header with your valid authentication token.
+* Set all video attributes as shown in the example below.
+
+.. example-code::
+
+   .. code-block:: shell
+
+      $ curl -X POST \
+          https://network-api.onefootball.com/v1/videos/ \
+          -H "Content-Type: application/json" \
+          -H 'Authorization: Bearer TOKEN' \
+          -d '{
+              "external_id": "VIDEO_ID",
+              "title": "Video title",
+              "url": "VIDEO_URL",
+              "language": "en",
+              "is_highlight": false,
+              "competitions": ["premier league"],
+              "teams": ["chelsea"],
+              "draft": false
+          }'
+
+   .. code-block:: python
+
+      import requests
+
+      headers = {
+          'Authorization': 'Bearer TOKEN',
+      }
+
+      data = {
+            "external_id": "VIDEO_ID",
+            "title": "Video title",
+            "url": "VIDEO_URL",
+            "language": "en",
+            "is_highlight": false,
+            "competitions": [],
+            "teams": [],
+            "draft": false
+      }
+
+      response = requests.post(
+        'https://network-api.onefootball.com/v1/videos/',
+        headers=headers,
+        data=data
+      )
+
+
+   .. code-block:: go
+
+      type Payload struct {
+       ExternalID         string    `json:"external_id"`
+       Title              string    `json:"title"`
+       URL                string    `json:"url"`
+       Language           string    `json:"language"`
+       IsHighlight        string    `json:"is_highlight"`
+       Competitions       []string  `json:"competitions"`
+       Teams              []string  `json:"teams"`
+       Draft              bool      `json:"draft"`
+      }
+
+      data := Payload{
+      // fill struct
+      }
+      payloadBytes, err := json.Marshal(data)
+      if err != nil {
+       // handle err
+      }
+      body := bytes.NewReader(payloadBytes)
+
+      req, err := http.NewRequest("POST", "https://network-api.onefootball.com/v1/videos/", body)
+      if err != nil {
+       // handle err
+      }
+      req.Header.Set("Content-Type", "application/json")
+      req.Header.Set("Authorization", "Bearer TOKEN")
+
+      resp, err := http.DefaultClient.Do(req)
+      if err != nil {
+       // handle err
+      }
+      defer resp.Body.Close()
+
+
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field                  | Usage      | Description                                                                                                                                                                                                                                   |
++========================+============+===============================================================================================================================================================================================================================================+
+| ``external_id``        | required   | The ID of the video as defined in your system. It must be unique (within a given language) within your own system.                                                                                                                            |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``title``              | required   | The title of the video. The title cannot be an empty string.                                                                                                                                                                                  |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``url``                | required   | The link to the video. The video must be public                                                                                                                                                                                               |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``language``           | required   | The language of the video. Valid choices are ``en``, ``de``, ``es``, ``fr``, ``br``, and ``it``.                                                                                                                                              |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``is_highlight``       | required   | A required field to set to ``true`` in case the video contains highlights of a match. Otherwise must be set to ``false``.                                                                                                                     |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``competitions``       | required   | Name of the competition(s) shown in the video. If a video is not about any specific competition, this field can set to an empty array ``[]``.                                                                                                 |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``teams``              | required   | Name of the team(s) shown in the video. If a video is not about any specific team, this field can set to an empty array ``[]``.                                                                                                               |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``match_home_team``    | required   | The name of the team that played home. Example: ``liverpool``. This field is required only if ``is_highlight`` is set to ``true``.                                                                                                            |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``match_away_team``    | required   | The name of the team that played away. Example: ``man utd``. This field is required only if ``is_highlight`` is set to ``true``.                                                                                                              |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``match_kickoff_date`` | required   | The date when the match was played. Example: ``2010-10-22T21:30:00Z``. This field is required only if ``is_highlight`` is set to ``true``.                                                                                                    |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``draft``              | optional   | An optional boolean to be used for testing purposes. If set to ``true``, the article will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users.                         |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|
+
+Deleting videos
+-----------------------------
+
+| Once your video is on OneFootball, you can deleting it.
+
+| In order to delete video on OneFootball, you will first need to get the OneFootball video ID.
+
+
+Obtaining a video's ID
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| To get the OneFootball video ID so that you can reference it in delete operations, take the example below and do the following:
+
+* Replace ``EXTERNAL_ID`` in the URL with the id of the video in your system that you provided when publishing the article. This should be encoded if necessary.
+* Replace ``TOKEN`` in the header with your valid authentication token.
+
+
+.. example-code::
+
+   .. code-block:: shell
+
+      $ curl -X GET \
+          https://network-api.onefootball.com/v1/videos/?external_id=EXTERNAL_ID \
+          -H "Content-Type: application/json" \
+          -H 'Authorization: Bearer TOKEN'
+
+   .. code-block:: python
+
+        import requests
+
+        headers = {
+            'Authorization': 'Bearer TOKEN',
+        }
+
+        params = {
+            'external_id': 'EXTERNAL_ID',
+        }
+
+        response = requests.get(
+            'https://network-api.onefootball.com/v1/videos/',
+            headers=headers,
+            params=params
+        )
+
+   .. code-block:: go
+
+      req, err := http.NewRequest("GET", "https://network-api.onefootball.com/v1/videos/?external_id=EXTERNAL_ID", nil)
+      if err != nil {
+       // handle err
+      }
+      req.Header.Set("Content-Type", "application/json")
+      req.Header.Set("Authorization", "Bearer TOKEN")
+
+      resp, err := http.DefaultClient.Do(req)
+      if err != nil {
+       // handle err
+      }
+      defer resp.Body.Close()
+
+
+Deleting a video
+~~~~~~~~~~~~~~~~~~~
+
+| You can delete articles from OneFootball using the ``DELETE`` method of the videos endpoint.
+
+| To do so, take the example below and do the following:
+
+* Replace ``VIDEO_ID`` in the URL with the OneFootball video ID you want to delete (see above for how to obtain this)
+* Replace ``TOKEN`` in the header with your valid authentication token.
+
+.. example-code::
+
+   .. code-block:: shell
+
+      $ curl -X DELETE \
+          https://network-api.onefootball.com/v1/videos/VIDEO_ID \
+          -H "Content-Type: application/json" \
+          -H 'Authorization: Bearer TOKEN'
+
+   .. code-block:: python
+
+        import requests
+
+        headers = {
+            'Authorization': 'Bearer TOKEN',
+        }
+
+        response = requests.delete(
+            'https://network-api.onefootball.com/v1/videos/VIDEO_ID',
+            headers=headers
+        )
+
+   .. code-block:: go
+
+      req, err := http.NewRequest("DELETE", "https://network-api.onefootball.com/v1/videos/VIDEO_ID", nil)
+      if err != nil {
+       // handle err
+      }
+      req.Header.Set("Content-Type", "application/json")
+      req.Header.Set("Authorization", "Bearer TOKEN")
+
+      resp, err := http.DefaultClient.Do(req)
+      if err != nil {
+       // handle err
+      }
+      defer resp.Body.Close()
+
