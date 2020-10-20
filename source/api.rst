@@ -135,7 +135,7 @@ Refreshing an authentication token
 
 
 Publishing articles
-------------------
+-------------------
 
 | Once you are set up and have an authentication token, you can publish an article to OneFootball.
 
@@ -265,7 +265,7 @@ Publishing an article
 |
 
 Updating and deleting articles
------------------------------
+------------------------------
 
 | Once your content is on OneFootball, you can manage your content by updating and deleting it.
 
@@ -613,7 +613,8 @@ Publishing a video
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``draft``              | optional   | An optional boolean to be used for testing purposes. If set to ``true``, the article will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users.                         |
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|
+
+
 
 Deleting videos
 -----------------------------
