@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OneFootball Network API \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-05 18:02+0200\n"
+"POT-Creation-Date: 2020-10-26 13:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../index.rst:2
-#: d8b21554aaa347c6be9494781605df04
+#: 8e03beadcd9e471fb23ccf90c0cda595
 msgid "Onefootball Network API"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OneFootball Network API \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-05 18:02+0200\n"
+"POT-Creation-Date: 2020-10-26 13:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,181 +17,185 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../api.rst:2
-#: 54781cc98e48455294130db499cd729f
+#: 6a500fb78a56403bbf93eae7bfa93ad7
 msgid "OneFootball Network API"
 msgstr ""
 
 #: ../../api.rst:5
-#: de2649591a5d4c0a903f065b596b843a
+#: 1391d39e02ae4f798e05dc373005c273
 msgid "Introduction"
 msgstr ""
 
 #: ../../api.rst:7
-#: 0e83d3f5cef6420bb1c2a1cbb3bfb226
-msgid "OneFootball is the world's leading digital football platform. The OneFootball Network API allows OneFootball's content partners to publish articles onto the OneFootball platform. It also allows partners to update and delete articles that they have already published to the OneFootball platform."
+#: c22a5f9ad480431d8660a38f971ea29b
+msgid "OneFootball is the world's leading digital football platform. The OneFootball Network API allows OneFootball's content partners to publish article and video content onto the OneFootball platform. It also allows partners to update and delete content that they have already published to the OneFootball platform."
 msgstr ""
 
 #: ../../api.rst:10
-#: 0ed2b013298c4725bab4c28dcdb4835f
+#: 1bfb2be43e7e4f19a8f72e52a5f9e5e7
 msgid "The API can be used by partners to set up their own services such that content published on their sites is automatically sent to OneFootball and natively integrated onto the OneFootball platform for OneFootball users."
 msgstr ""
 
 #: ../../api.rst:13
-#: 4b7942cee95246b587c17c5d99ef871f
+#: 4dd1c23788254ec4aa36033f6c85a030
 msgid "Please note that the OneFootball Network is a closed, invite-only platform and only authorized content partners are able to use the OneFootball Network API."
 msgstr ""
 
 #: ../../api.rst:17
-#: c41eab6648c348e08d54bed506a6fe00
+#: 6bfda43c3b684e37af54feba946de965
 msgid "Conventions"
 msgstr ""
 
 #: ../../api.rst:19
-#: e99335c5660d43e8a4915c327aee9e4c
+#: 3a27612aa9de47799e7c69f0ac0e0079
 msgid "Before you get started, please note the conventions listed here, which apply throughout the API."
 msgstr ""
 
 #: ../../api.rst:23
-#: 1617ca2a01d549c7921da521f2ae71fa
+#: 49c7f2a72c3b44f38ae69cd0e2bc1241
 msgid "Schema"
 msgstr ""
 
 #: ../../api.rst:25
-#: 73eacf9fe8264fd8a52e5906abca0797
+#: 954a3890a710451ab378f5d3e0d310e5
 msgid "All API access is over HTTPS. All data is sent and received in JSON format."
 msgstr ""
 
 #: ../../api.rst:27
-#: e07537e279e44beaae7d1a005b6b1366
+#: 450aaee4e0d1491285bbb4f7e199d3d2
 msgid "Access is from the following URL: https://network-api.onefootball.com"
 msgstr ""
 
 #: ../../api.rst:31
-#: 7e0f0ac2ef634e6eaaebe63161e7675e
+#: affdeec0500443e2a6378f7c5a6b9c72
 msgid "Time format"
 msgstr ""
 
 #: ../../api.rst:33
-#: b24bb9cae47e4baa81251a795fe14bd4
+#: cd52825b5f844db883a0bafa46db4eda
 msgid "All timestamps return in ISO 8601 format ``YYYY-MM-DDTHH:MM:SSZ``."
 msgstr ""
 
 #: ../../api.rst:36
-#: 0a520d2a079a4e56bbf680bb6eaa79ec
+#: 4d2b674cb44c4910b89c1c40f8f7a83d
 msgid "Authentication"
 msgstr ""
 
 #: ../../api.rst:38
-#: 3e3abfe95ebf42a9a083e2a6f53f5e43
+#: a59e832209344071a2bf0abf842b8cc0
 msgid "Requests that require authentication must provide ``Authorization`` header. The value must be a ``Bearer`` token acquired during the login process."
 msgstr ""
 
 #: ../../api.rst:41
-#: 42016c7b07c84402b2d9220e9dc16094
+#: 16b5c5274b284eb08c90fc612156a57d
 msgid "Examples"
 msgstr ""
 
 #: ../../api.rst:43
-#: 5303528507d1448e8de26533bb68bd12
+#: bfe120dcf9684c71ae96d737f27601b3
 msgid "In the documentation, we have tried to give code snippet examples that can be copied, pasted and adjusted rather than describing everything in words. Please look to the examples as a reference."
 msgstr ""
 
 #: ../../api.rst:46
-#: 952c9d8186d147acb65d97a4718fdbdf
+#: 2ed5fc0f4a984c438ac3a0156bfe0568
 msgid "Testing"
 msgstr ""
 
 #: ../../api.rst:48
-#: 3d45ba7eddc1498b9b772f9a4c431c38
-msgid "When testing the publication and updating of articles, use the optional ``draft`` boolean. A request sent with ``draft`` being ``TRUE`` will ensure that the respective article *will not* be visible to OneFootball users."
+#: 1440f8c0ac304af3bfa436784b8214e0
+msgid "When testing the publication and updating of content, use the optional ``draft`` boolean. A request sent with ``draft`` being ``TRUE`` will ensure that the respective content *will not* be visible to OneFootball users."
 msgstr ""
 
 #: ../../api.rst:50
-#: ddbfbafd455c4d1a832fca3fa94faad1
-msgid "When you are ready to use your service in production and send real articles to be seen by OneFootball users, you can either leave out the ``draft`` parameter or set ``draft`` to ``FALSE``."
+#: 7d95ef14627a4ad992fc72564ad6c578
+msgid "When you are ready to use your service in production and send real content to be seen by OneFootball users, you can either leave out the ``draft`` parameter or set ``draft`` to ``FALSE``."
 msgstr ""
 
 #: ../../api.rst:55
-#: 9dc74b48b9244ee7b75893467355e296
+#: 15706374ff7b4da5a78f03fa80fd4cd5
 msgid "Getting set up"
 msgstr ""
 
 #: ../../api.rst:57
-#: a31eb9c03f1d43e5a5a6189fd5d646b1
+#: 4d25434ebe9441ed8da3552a16f1983f
 msgid "In order to publish, update or delete content on OneFootball via the OneFootball Network API, you must first do the following:"
 msgstr ""
 
 #: ../../api.rst:59
-#: c5613523b2e5466e954631aa09da334b
+#: 628fc55d31394c7f996d6311e0046534
 msgid "Complete the registration for your OneFootball Network account."
 msgstr ""
 
 #: ../../api.rst:60
-#: 936e25d6622c4c38a53a8573f907d350
+#: 471381fc6ee34016b853dd47f537de1c
 msgid "Use your login credentials to retrieve an authentication token that must be used for other requests."
 msgstr ""
 
 #: ../../api.rst:64
-#: e2c93a028b7f42f8bee0be802912618a
+#: 24fe0588d5b8439cb955eb3e444e8a66
 msgid "Activating your OneFootball Network account"
 msgstr ""
 
 #: ../../api.rst:66
-#: 2f69dbbf184e4345b8b607d629a16674
+#: d9bb27c97b0c4ec5b38e090f710f35bb
 msgid "The OneFootball Network in an invitation-only platform. If you are invited to join and have agreed to come onboard, you will receive a registration email. Please follow the instructions in the registration email, set your password and then proceed to log in to the OneFootball Network portal. Make sure to complete the onboarding process in the portal before trying to publish content via the OneFootball Network API."
 msgstr ""
 
 #: ../../api.rst:70
-#: 2269525838c94eb3aba7ceb8cec40348
+#: eaf71ad9649b4882919a66ffcc62e7cb
 msgid "Retrieving an authentication token"
 msgstr ""
 
 #: ../../api.rst:72
-#: 98182a975fd14a6785ff9ac5f646ed6d
+#: b1654ffa203b474088ea9ac0f8a07a0b
 msgid "Once you have successfully logged in to the OneFootball Network portal, you can use the same email address and password credentials to obtain an authentication token for the OneFootball Network API."
 msgstr ""
 
 #: ../../api.rst:74
-#: 7507b03395754d17818b8f0062facb99
+#: bb40df0dfd8c467e979d2bec615eee65
 msgid "You must have a valid authentication token in order to publish, modify, or delete content via requests made to the OneFootball Network API. To acquire a token, send your login credentials as per the example below:"
 msgstr ""
 
 #: ../../api.rst:132
-#: df6aff02f07c446dbbdb4f5590305efd
+#: 62684e09dd0a4240ae803038542cdf33
 msgid "Refreshing an authentication token"
 msgstr ""
 
 #: ../../api.rst:134
-#: 10fbbbdcad364f4d8cf9c5970e647714
+#: e5607099a042460f9b217f913bb05113
 msgid "Each authentication token is valid for seven days after it is issued. After a token expires, repeat the process by using your login credentials to acquire a new one."
 msgstr ""
 
 #: ../../api.rst:138
-#: 1e98647619994092bc1743bda72d8062
-msgid "Publishing content"
+#: 079383329bfc49158998ce6775f751c9
+msgid "Publishing articles"
 msgstr ""
 
 #: ../../api.rst:140
-#: 9d48da8d9a0b49d0851582014a636c7d
+#: 93d893f9056f4c80b7bc9fa7d63e44a7
 msgid "Once you are set up and have an authentication token, you can publish an article to OneFootball."
 msgstr ""
 
 #: ../../api.rst:144
-#: c22747c07d684c12a46cc9042f508513
+#: bf51bf1de6ae4b9a86f8bdf790da9e75
 msgid "Publishing an article"
 msgstr ""
 
 #: ../../api.rst:146
-#: 33ab0318071e414293baa20d9159c9ae
+#: c9a12ab0330d4a178b31caafd4fd3cae
 msgid "Using a valid authentication token, you can publish an article by sending a ``POST`` request to the posts entity endpoint."
 msgstr ""
 
 #: ../../api.rst:148
 #: ../../api.rst:333
 #: ../../api.rst:451
-#: 343a72c2269a466b90f630a31abdb2b5
-#: 343a72c2269a466b90f630a31abdb2b5
-#: 343a72c2269a466b90f630a31abdb2b5
+#: ../../api.rst:505
+#: ../../api.rst:684
+#: 67db41658f04414c971f47ed37fadca0
+#: 018a61a40aea44f5bb0ecebce7791e44
+#: 19a842f2cdd74f8f95baca5d84df9fab
+#: 2426c6d046164cc6af43e9950841da5a
+#: 231fd2b1cd3a4f26b2ae85c3440bb438
 msgid "To do so, take the example below and do the following:"
 msgstr ""
 
@@ -199,41 +203,55 @@ msgstr ""
 #: ../../api.rst:281
 #: ../../api.rst:336
 #: ../../api.rst:454
-#: 4a1d58df7abc4c3c87cb3d18d5ba7219
-#: 4a1d58df7abc4c3c87cb3d18d5ba7219
-#: 4a1d58df7abc4c3c87cb3d18d5ba7219
-#: 4a1d58df7abc4c3c87cb3d18d5ba7219
+#: ../../api.rst:507
+#: ../../api.rst:633
+#: ../../api.rst:687
+#: 68ef7739a538482f9b5867a4aabe53ad
+#: f6d28f42f1f244b1831a062d7a18d455
+#: 6bd8670dfe364a56869211ae8a0d2299
+#: b75164003c094a9f8481c625a8112a96
+#: 88a7e83acc7142d7964857f62c29c4f2
+#: 16920c3f83664d1f976621f8f5348f13
+#: 6f956d82c33a41ffa38037bd9a3af882
 msgid "Replace ``TOKEN`` in the header with your valid authentication token."
 msgstr ""
 
 #: ../../api.rst:151
-#: 005aed43de0d447d84d84a22f988fe36
+#: 48b1398e5a6c458f8cf0d244fa7ff792
 msgid "Set all article attributes as shown in the example below."
 msgstr ""
 
 #: ../../api.rst:244
 #: ../../api.rst:426
-#: f3bd061eec8746dbac48dcb70b50b6c3
-#: f3bd061eec8746dbac48dcb70b50b6c3
+#: ../../api.rst:592
+#: d7738e5c055b4bac893d9b550eea5bfc
+#: cf6188cc14a146689ac9959d70599be1
+#: 418cb7db7a23478e95cfd201357851b5
 msgid "Field"
 msgstr ""
 
 #: ../../api.rst:244
 #: ../../api.rst:426
-#: 7e5ed0e6b69d4f9abb1996ec27e29042
-#: 7e5ed0e6b69d4f9abb1996ec27e29042
+#: ../../api.rst:592
+#: 7111f7c8fd9d4ebb89b332beb976bd4a
+#: 96b87a1eff5648b786f70f2c6741679d
+#: f319f911ff3e4044974e341c9a4d03a7
 msgid "Usage"
 msgstr ""
 
 #: ../../api.rst:244
 #: ../../api.rst:426
-#: e15ee21e0c474af5abf431035c038144
-#: e15ee21e0c474af5abf431035c038144
+#: ../../api.rst:592
+#: 3079fe9d5fe94937b147b8a450ae47a3
+#: f989768136a24cde86cf9ffd75ad0474
+#: 3f5b0bc2f6434f8c890f956bc2f52908
 msgid "Description"
 msgstr ""
 
 #: ../../api.rst:246
-#: c073d115c2e747ad9508f8f347621d30
+#: ../../api.rst:594
+#: a3c43232bd4d4c868b11f81e61efd26a
+#: 87b9ecf5ea344917a77ac67d6c111a21
 msgid "``external_id``"
 msgstr ""
 
@@ -250,115 +268,139 @@ msgstr ""
 #: ../../api.rst:434
 #: ../../api.rst:436
 #: ../../api.rst:438
-#: f32751132dbb4c96802f43a46aa8481c
-#: f32751132dbb4c96802f43a46aa8481c
-#: 5d2b38bbb9b34b5ebd7bd28db43bd6bc
-#: 8b23a39bdc474f8a93ec64770b19be5c
-#: 8ed0dd5063a64766b1598d5f50f594d3
-#: 8c4c9f7570274f58b7df41fc5efed56e
-#: 7f843b61029e48599cdad054e14c5224
-#: f32751132dbb4c96802f43a46aa8481c
-#: f32751132dbb4c96802f43a46aa8481c
-#: f32751132dbb4c96802f43a46aa8481c
-#: e0ad72638f1d4a538c0227ce3b123ea8
-#: 848c6e4eb5bc4e98b01d86ac3da74a78
-#: a417cd24940b4db0b4158751e9833236
+#: ../../api.rst:594
+#: ../../api.rst:596
+#: ../../api.rst:598
+#: ../../api.rst:600
+#: ../../api.rst:602
+#: ../../api.rst:604
+#: ../../api.rst:606
+#: ../../api.rst:608
+#: ../../api.rst:610
+#: ../../api.rst:612
+#: 0e360e3ca52f496d8c3bd2f9380d4b98
+#: a6ff799d5a3848598f000fc8ffc1a647
+#: fa6836a3068340a9828a83c560f6dd8f
+#: d25a239408164ed3bb813d429c3153d4
+#: 2ea0ada122e64e3e87753cf81512caf3
+#: cd684c9091a746bb98a98d47f106f4a1
+#: fddc6934a3c041c1bf6145968a3d64dd
+#: 89f73b503da1445abb10f9cb57924046
+#: b5a5822e33f744be89a22c9aa9e0cf36
+#: d5c8016526e64c0db8335c0c06e61aca
+#: 67009733a7774ca7843119f4db8e9c33
+#: 8f764d1a90b544a384bea003583256a3
+#: 02d00e0990224606baa6bbf86a899722
+#: e354203c19bb4a13bdfae24ad8d5d11e
+#: eb01fc46cdc64b1fbce93f1bf13411dc
+#: 8cd456c63f454903a53e862f5a95784a
+#: 0e13a17d9fe5488c967f17ba68bf76ff
+#: 953e568bcdfc47dcb869493c7f7e8381
+#: a24e13b9b5b74913849255566fb465ec
+#: 4af4481afd24423eaab8964b7524e720
+#: 5a6ac14abd1b4740b21c63443fc2ce05
+#: c0f78e98a168478ba62fdaa22c4f02a6
+#: b359df7e43fa430e9e52c51569cc3dbe
 msgid "required"
 msgstr ""
 
 #: ../../api.rst:246
-#: a64c8a7e1a5846a2a37dacc2a7af1c39
+#: 3b0bbe3afc384f6ea86bda26032f4785
 msgid "The ID of the article as defined in your system. It must be unique (within a given language) within your own system."
 msgstr ""
 
 #: ../../api.rst:248
 #: ../../api.rst:428
-#: 06c8d62ade8444dab2c1f52e7a51e532
-#: 06c8d62ade8444dab2c1f52e7a51e532
+#: c2430917bb064d35a00e0fe65aa2832a
+#: 1f2a6bec7bb34d859750b5ca1c78e3a5
 msgid "``source_url``"
 msgstr ""
 
 #: ../../api.rst:248
 #: ../../api.rst:428
-#: f980f1888cdd4fbe94d520d226f14113
-#: f980f1888cdd4fbe94d520d226f14113
+#: d37582281fbb4e61a767ee015c2b55f4
+#: 5aef50188c674f828a4363ceafcf2388
 msgid "The link to the article as published on your website. Place your homepage url if the article is not published anywhere else."
 msgstr ""
 
 #: ../../api.rst:250
 #: ../../api.rst:430
-#: ea8520523ace44e998dd224c73e5de36
-#: ea8520523ace44e998dd224c73e5de36
+#: ../../api.rst:600
+#: 8e36142f621340098187f7dce80ef0df
+#: 896f1af2de3546308a06bc4e1df609a1
+#: 5df521156c964c259b3bcba98b452e94
 msgid "``language``"
 msgstr ""
 
 #: ../../api.rst:250
 #: ../../api.rst:430
-#: 2ce95e818c994d768fbb4f2cbb6f6704
-#: 2ce95e818c994d768fbb4f2cbb6f6704
+#: db9d798ce01547c298a38ee76bdf418b
+#: 50108b49453b44a69f1953a92813fd01
 msgid "The language of the article. Valid choices are ``en``, ``de``, ``es``, ``fr``, ``br``, and ``it``."
 msgstr ""
 
 #: ../../api.rst:252
 #: ../../api.rst:432
-#: e84063a16bf344bd9245eee2f558f641
-#: e84063a16bf344bd9245eee2f558f641
+#: e6c8682d85ed4ce8afd13de11be0ef81
+#: cd8e88c7b00e4313abb8e8f8d07d0576
 msgid "``published``"
 msgstr ""
 
 #: ../../api.rst:252
 #: ../../api.rst:432
-#: d05a1ab6953745a68d3022ac7150f750
-#: d05a1ab6953745a68d3022ac7150f750
+#: 5f387934b7e645b89ab8f6a512e23910
+#: 9ca1bf1f74274eb08cc4f3516fc06319
 msgid "The time that the article was published. If in doubt, use the current time."
 msgstr ""
 
 #: ../../api.rst:254
 #: ../../api.rst:434
-#: 8fd5e86c3c544fe2ae1509e036451438
-#: 8fd5e86c3c544fe2ae1509e036451438
+#: 25c6b4f3cebe4283880fafa594493873
+#: f84d202a693446f8937429cb5cd6519f
 msgid "``modified``"
 msgstr ""
 
 #: ../../api.rst:254
 #: ../../api.rst:434
-#: e96b2882533a496597f4e217e8efe1bc
-#: e96b2882533a496597f4e217e8efe1bc
+#: d56324df27e74f438732a380344c2da1
+#: 351b93843d864e2894c74dda00ac3b1f
 msgid "The time that the article was last updated. If in doubt, use the current time."
 msgstr ""
 
 #: ../../api.rst:256
 #: ../../api.rst:436
-#: eb3acbe6d9e744af9044d647826686be
-#: eb3acbe6d9e744af9044d647826686be
+#: 51f813860bcd40f18626dc538d248b87
+#: f5a9252fb739476f851ef79745830fda
 msgid "``content``"
 msgstr ""
 
 #: ../../api.rst:256
 #: ../../api.rst:436
-#: f9f028250e0a43368eb4d5258dd1d675
-#: f9f028250e0a43368eb4d5258dd1d675
+#: bd3e4aad19234b21a3cec9992fe65513
+#: b96b680e36c043a8ab7191dbeb210dee
 msgid "The content of the article, which must be in correctly-formatted HTML. Please see `this link <https://static.onefootball.com/onefootball-network/technical-documentation/html-guidelines>`_ for important details on acceptable HTML content."
 msgstr ""
 
 #: ../../api.rst:258
 #: ../../api.rst:438
-#: 4ff6d0fc31bf4d1893c0e2727c135365
-#: 4ff6d0fc31bf4d1893c0e2727c135365
+#: ../../api.rst:596
+#: b9c1a264a62544bf835701ed4f55d99a
+#: 4edb0af7f1174f8da357bb8964ec4c4c
+#: 9805745e8f904c1fa90a13bc7732d17b
 msgid "``title``"
 msgstr ""
 
 #: ../../api.rst:258
 #: ../../api.rst:438
-#: 09c1d2b8ee1b4c04a468646041e0b85b
-#: 09c1d2b8ee1b4c04a468646041e0b85b
+#: b13de604342b454ebabc7b6f1c97cdb0
+#: 9a96314f5cb94497b6fe404e95d668b5
 msgid "The title of the article. The title cannot be an empty string."
 msgstr ""
 
 #: ../../api.rst:260
 #: ../../api.rst:440
-#: be458ff33bf144589c7df986e081bfe1
-#: be458ff33bf144589c7df986e081bfe1
+#: 77a58d0ce63e4371a136abb93717f006
+#: bd974cf0e841441c8c569f4d23585e3e
 msgid "``image_url``"
 msgstr ""
 
@@ -366,95 +408,259 @@ msgstr ""
 #: ../../api.rst:262
 #: ../../api.rst:440
 #: ../../api.rst:442
-#: 76a33686d8f642809420282dbbb80e01
-#: 76a33686d8f642809420282dbbb80e01
-#: 76a33686d8f642809420282dbbb80e01
-#: 76a33686d8f642809420282dbbb80e01
+#: ../../api.rst:614
+#: b320360d17d94642ac10d6ae0bd0addf
+#: 1ea0e54b25824bb08c6e42ec3e1304d5
+#: 0aa2ca156f3e437286843ed6922bdf2a
+#: a9b9fd2aef4641098035c34f9d88e4e9
+#: 5caa499e5ef64e809fdf27f2fae377dc
 msgid "optional"
 msgstr ""
 
 #: ../../api.rst:260
 #: ../../api.rst:440
-#: a86e3e83373c4274b55c19bd4f52dd93
-#: a86e3e83373c4274b55c19bd4f52dd93
+#: 8b11d737b94c400bb20a3bfccfc2b3b7
+#: 1fb70745fc774262bba98a0a52b14d3b
 msgid "An optional field for the URL of the article's featured image. If provided, ``image_width`` and ``image_height`` should be provided as well (the image's width and height in pixels)."
 msgstr ""
 
 #: ../../api.rst:262
 #: ../../api.rst:442
-#: 758728f18d464398a99b5ac8d60ddd3b
-#: 758728f18d464398a99b5ac8d60ddd3b
+#: ../../api.rst:614
+#: ccff4a035602431ba6bbd03a5e5e861c
+#: a000847255524d6681d7931d13711c91
+#: 18ffee63adac4937952c4651cea25431
 msgid "``draft``"
 msgstr ""
 
 #: ../../api.rst:262
 #: ../../api.rst:442
-#: 85d5df9f36c24b22ad86a59fcae8878e
-#: 85d5df9f36c24b22ad86a59fcae8878e
+#: 1b8e1ebc0e4e48acac747cdf2fae009b
+#: 9c4c02e350394f568adb37f1b19af8a9
 msgid "An optional boolean to be used for testing purposes. If set to ``true``, the article will not be made visible to OneFootball users. If not povided, the article will by default be made available to OneFootball users."
 msgstr ""
 
 #: ../../api.rst:268
-#: f5322040854944f283e53955acaf491d
-msgid "Updating and deleting content"
+#: 9c6d601eddc443c1b8411199c32b5e38
+msgid "Updating and deleting articles"
 msgstr ""
 
 #: ../../api.rst:270
-#: 21eecbdc9106499e97a40bd071e801f5
+#: ff8ac0dc44b84e8e978dbe25f545c1f9
 msgid "Once your content is on OneFootball, you can manage your content by updating and deleting it."
 msgstr ""
 
 #: ../../api.rst:272
-#: d768f75e047a4388a95c88a78db7414f
+#: d651fbab47e6436b866ecc60c346da13
 msgid "In order to update or delete an article on OneFootball, you will first need to get the OneFootball post ID for that article."
 msgstr ""
 
 #: ../../api.rst:276
-#: bfa4b44d574c4d76a0724f8682152212
+#: 593c772b02e24bae847b8eb6d0f63b08
 msgid "Obtaining an article's post ID"
 msgstr ""
 
 #: ../../api.rst:278
-#: b001d7e125d64956a68372b4da8be9ca
+#: 6d3b8fabb06b47bcbaa2bafd49083e2e
 msgid "To get the OneFootball post ID for an article so that you can reference it in update or delete operations, take the example below and do the following:"
 msgstr ""
 
 #: ../../api.rst:280
-#: feb50f9f923f457cae19228599cf49a1
+#: 33a20456c99f4e1e92d500070066dc23
 msgid "Replace ``EXTERNAL_ID`` in the URL with the id of the article in your system that you provided when publishing the article. This should be encoded if necessary."
 msgstr ""
 
 #: ../../api.rst:329
-#: a9e64ccac49f4708b8e2835bfe9b0958
+#: a50462e3c8be4da9a975fcd9ed24bed9
 msgid "Updating an article"
 msgstr ""
 
 #: ../../api.rst:331
-#: a969744cfee641bd8541dbeae30dcb99
+#: 6074dc1f289447d7918f9da33355b7b3
 msgid "Occasionally, you may edit an article from your site. To ensure that this article is updated on OneFootball, use the ``PUT`` method of the post entity endpoint."
 msgstr ""
 
 #: ../../api.rst:335
-#: 51ded9a6bbc1425fa9776a3de662f883
+#: de044fffd39e42aa9ed5fce67eb5b65b
 msgid "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article you want to update (see above for how to obtain this)."
 msgstr ""
 
 #: ../../api.rst:337
-#: f66cc4c6da2c4647b5c4ede4854ca6f5
+#: d4300330b5ba4a2ea9150978546b10c8
 msgid "Set all article attributes as shown in the example below. Note that all attributes will overwrite existing values."
 msgstr ""
 
 #: ../../api.rst:447
-#: 1356dea39fc144a5a58c5be8c5d4306f
+#: fe09f94e94f8447c89b63c2dcdec11e5
 msgid "Deleting an article"
 msgstr ""
 
 #: ../../api.rst:449
-#: 7acb80b3e16940ff85a7f735a5347663
+#: d423c2d8c4d649cfbf4f75b046c3d9e1
 msgid "You can also delete articles from OneFootball using the ``DELETE`` method of the posts endpoint."
 msgstr ""
 
 #: ../../api.rst:453
-#: 1259e714606848f9a34d5edf8f43d3df
+#: 496418cf53354bc79d962e03768354b0
 msgid "Replace ``POST_ID`` in the URL with the OneFootball post ID of the article you want to delete (see above for how to obtain this)"
+msgstr ""
+
+#: ../../api.rst:495
+#: d438e6418f6e4bd48d261226d7e4727b
+msgid "Publishing videos"
+msgstr ""
+
+#: ../../api.rst:497
+#: b854fe9540804650bc03398b1130aa9e
+msgid "Once you are set up and have an authentication token, you can publish videos to OneFootball."
+msgstr ""
+
+#: ../../api.rst:501
+#: 6d44da2ee857402197cbad1991c76d6c
+msgid "Publishing a video"
+msgstr ""
+
+#: ../../api.rst:503
+#: 3dff15c0247e4a9b985fc18468e3026d
+msgid "Using a valid authentication token, you can publish a video by sending a ``POST`` request to the videos entity endpoint."
+msgstr ""
+
+#: ../../api.rst:508
+#: ad63d5595c38428c8c3bb5ed920e6ffb
+msgid "Set all video attributes as shown in the example below."
+msgstr ""
+
+#: ../../api.rst:594
+#: 68cdc0d5f46c44318098f4a218d93de8
+msgid "The ID of the video as defined in your system. It must be unique (within a given language) within your own system."
+msgstr ""
+
+#: ../../api.rst:596
+#: d48f809799ad4e6bbadb1a8b0b6feba0
+msgid "The title of the video. The title cannot be an empty string."
+msgstr ""
+
+#: ../../api.rst:598
+#: 5e218a95e12548b6be79fa27fc153d90
+msgid "``url``"
+msgstr ""
+
+#: ../../api.rst:598
+#: 5908fddf4c6144afb914f165007c08e1
+msgid "The link to the video. The video must be public"
+msgstr ""
+
+#: ../../api.rst:600
+#: 4cf400c09e0846a5a1e0884fc63704e1
+msgid "The language of the video. Valid choices are ``en``, ``de``, ``es``, ``fr``, ``br``, and ``it``."
+msgstr ""
+
+#: ../../api.rst:602
+#: ee8e50d01f8e4a2e81b4c6e8aa28441c
+msgid "``is_highlight``"
+msgstr ""
+
+#: ../../api.rst:602
+#: 6d2ac4c8e0674679a6d4b3ec846f7f6b
+msgid "A required field to set to ``true`` in case the video contains highlights of a match. Otherwise must be set to ``false``."
+msgstr ""
+
+#: ../../api.rst:604
+#: d3f372fb1812425faf2042b19ebbebe5
+msgid "``competitions``"
+msgstr ""
+
+#: ../../api.rst:604
+#: ab4dde0d06f44a0e84e399ad4c4c485d
+msgid "Name of the competition(s) shown in the video. If a video is not about any specific competition, this field can set to an empty array ``[]``."
+msgstr ""
+
+#: ../../api.rst:606
+#: 218a42d632584afb944f6fef25715ec0
+msgid "``teams``"
+msgstr ""
+
+#: ../../api.rst:606
+#: c6de63089c5c44f9b6f3a15618487086
+msgid "Name of the team(s) shown in the video. If a video is not about any specific team, this field can set to an empty array ``[]``."
+msgstr ""
+
+#: ../../api.rst:608
+#: 7823b4d58b324f59ac813f5917b232da
+msgid "``match_home_team``"
+msgstr ""
+
+#: ../../api.rst:608
+#: c53584601d0348768560da72ab1975af
+msgid "The name of the team that played home. Example: ``liverpool``. This field is required only if ``is_highlight`` is set to ``true``."
+msgstr ""
+
+#: ../../api.rst:610
+#: 20206bd3030f4195a3beca949a57a7f1
+msgid "``match_away_team``"
+msgstr ""
+
+#: ../../api.rst:610
+#: 8c9cd5be75d54d63a24be71d18de0760
+msgid "The name of the team that played away. Example: ``man utd``. This field is required only if ``is_highlight`` is set to ``true``."
+msgstr ""
+
+#: ../../api.rst:612
+#: 7c3c211cc32e407287c2b70e828f36e0
+msgid "``match_kickoff_date``"
+msgstr ""
+
+#: ../../api.rst:612
+#: c8ade086b2ce4bc6b7ad2da89635cfd8
+msgid "The date when the match was played. Example: ``2010-10-22T21:30:00Z``. This field is required only if ``is_highlight`` is set to ``true``."
+msgstr ""
+
+#: ../../api.rst:614
+#: 038baa3e147446e3bf176ab66989c29e
+msgid "An optional boolean to be used for testing purposes. If set to ``true``, the video will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users."
+msgstr ""
+
+#: ../../api.rst:620
+#: 0de4d8e4a9784d0e850565f341b5d89e
+msgid "Deleting videos"
+msgstr ""
+
+#: ../../api.rst:622
+#: 84bc4cba453b4d54a43a9f9b3ffbfbd3
+msgid "Once your video is on OneFootball, you can delete it. Please note that we do not currently support updating videos, so if you want to make any changes to an already-published video, please delete it and publish a new one."
+msgstr ""
+
+#: ../../api.rst:624
+#: 3b5310017f6a403aa60e63760275c011
+msgid "In order to delete video on OneFootball, you will first need to get the OneFootball video ID."
+msgstr ""
+
+#: ../../api.rst:628
+#: 61799e8fd027492c8c054f8b4d030ae5
+msgid "Obtaining a video's ID"
+msgstr ""
+
+#: ../../api.rst:630
+#: 9a45fe7310f04ae192714cf225d5d7d7
+msgid "To get the OneFootball video ID so that you can reference it in delete operations, take the example below and do the following:"
+msgstr ""
+
+#: ../../api.rst:632
+#: 242ecd8b9fc34a3baf707a280b8d7153
+msgid "Replace ``EXTERNAL_ID`` in the URL with the id of the video in your system that you provided when publishing the video. This should be encoded if necessary."
+msgstr ""
+
+#: ../../api.rst:680
+#: 3922f18978f147d9888f82b6273ddd42
+msgid "Deleting a video"
+msgstr ""
+
+#: ../../api.rst:682
+#: abdd4b21eb74497c9bc03a5aaa559239
+msgid "You can delete videos from OneFootball using the ``DELETE`` method of the videos endpoint."
+msgstr ""
+
+#: ../../api.rst:686
+#: 8e82650d80474103846b26881907095f
+msgid "Replace ``VIDEO_ID`` in the URL with the OneFootball video ID you want to delete (see above for how to obtain this)"
 msgstr ""

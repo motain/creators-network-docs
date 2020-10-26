@@ -4,7 +4,7 @@ OneFootball Network API
 Introduction
 ------------
 
-| OneFootball is the world's leading digital football platform. The OneFootball Network API allows OneFootball's content partners to publish articles onto the OneFootball platform. It also allows partners to update and delete articles that they have already published to the OneFootball platform.
+| OneFootball is the world's leading digital football platform. The OneFootball Network API allows OneFootball's content partners to publish article and video content onto the OneFootball platform. It also allows partners to update and delete content that they have already published to the OneFootball platform.
 
 
 | The API can be used by partners to set up their own services such that content published on their sites is automatically sent to OneFootball and natively integrated onto the OneFootball platform for OneFootball users.
@@ -45,9 +45,9 @@ Examples
 Testing
 ~~~~~~~
 
-| When testing the publication and updating of articles, use the optional ``draft`` boolean. A request sent with ``draft`` being ``TRUE`` will ensure that the respective article *will not* be visible to OneFootball users.
+| When testing the publication and updating of content, use the optional ``draft`` boolean. A request sent with ``draft`` being ``TRUE`` will ensure that the respective content *will not* be visible to OneFootball users.
 
-| When you are ready to use your service in production and send real articles to be seen by OneFootball users, you can either leave out the ``draft`` parameter or set ``draft`` to ``FALSE``.
+| When you are ready to use your service in production and send real content to be seen by OneFootball users, you can either leave out the ``draft`` parameter or set ``draft`` to ``FALSE``.
 
 |
 
@@ -494,7 +494,7 @@ Deleting an article
 Publishing videos
 ------------------
 
-| Once you are set up and have an authentication token, you can publish a video to OneFootball.
+| Once you are set up and have an authentication token, you can publish videos to OneFootball.
 
 
 Publishing a video
@@ -611,7 +611,7 @@ Publishing a video
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``match_kickoff_date`` | required   | The date when the match was played. Example: ``2010-10-22T21:30:00Z``. This field is required only if ``is_highlight`` is set to ``true``.                                                                                                    |
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ``draft``              | optional   | An optional boolean to be used for testing purposes. If set to ``true``, the article will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users.                         |
+| ``draft``              | optional   | An optional boolean to be used for testing purposes. If set to ``true``, the video will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users.                           |
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -619,7 +619,7 @@ Publishing a video
 Deleting videos
 -----------------------------
 
-| Once your video is on OneFootball, you can deleting it.
+| Once your video is on OneFootball, you can delete it. Please note that we do not currently support updating videos, so if you want to make any changes to an already-published video, please delete it and publish a new one.
 
 | In order to delete video on OneFootball, you will first need to get the OneFootball video ID.
 
@@ -629,7 +629,7 @@ Obtaining a video's ID
 
 | To get the OneFootball video ID so that you can reference it in delete operations, take the example below and do the following:
 
-* Replace ``EXTERNAL_ID`` in the URL with the id of the video in your system that you provided when publishing the article. This should be encoded if necessary.
+* Replace ``EXTERNAL_ID`` in the URL with the id of the video in your system that you provided when publishing the video. This should be encoded if necessary.
 * Replace ``TOKEN`` in the header with your valid authentication token.
 
 
@@ -679,7 +679,7 @@ Obtaining a video's ID
 Deleting a video
 ~~~~~~~~~~~~~~~~~~~
 
-| You can delete articles from OneFootball using the ``DELETE`` method of the videos endpoint.
+| You can delete videos from OneFootball using the ``DELETE`` method of the videos endpoint. 
 
 | To do so, take the example below and do the following:
 
