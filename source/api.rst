@@ -523,7 +523,9 @@ Publishing a video
               "is_highlight": false,
               "competitions": ["premier league"],
               "teams": ["chelsea"],
-              "draft": false
+              "draft": false,
+              "branded": true,
+              "thumbnail": "VIDEO_THUMBNAIL"
           }'
 
    .. code-block:: python
@@ -542,7 +544,9 @@ Publishing a video
             "is_highlight": false,
             "competitions": [],
             "teams": [],
-            "draft": false
+            "draft": false,
+            "branded": true,
+            "thumbnail": "VIDEO_THUMBNAIL"
       }
 
       response = requests.post(
@@ -563,6 +567,8 @@ Publishing a video
        Competitions       []string  `json:"competitions"`
        Teams              []string  `json:"teams"`
        Draft              bool      `json:"draft"`
+       Branded            bool      `json:"branded"`
+       Thumbnail          string    `json:"thumbnail"`
       }
 
       data := Payload{
@@ -613,8 +619,10 @@ Publishing a video
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ``draft``              | optional   | An optional boolean to be used for testing purposes. If set to ``true``, the video will not be made visible to OneFootball users. If not povided, the video will by default be made available to OneFootball users.                           |
 +------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-
+| ``branded``            | optional   | An optional boolean to be used for in case your video contains branded content. If set to ``true``, ADD DESCRIPTION HERE                                                                                                                      | 
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ``thumbnail``          | optional   | An optional boolean to be used in case you want to add your custom thumbnail.                                                                                                                                                                 |
++------------------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Deleting videos
 -----------------------------
