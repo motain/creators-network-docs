@@ -24,8 +24,6 @@ Schema
 
 | All API access is over HTTPS. All data is sent and received in JSON format.
 
-| Access is from the following URL: https://network-api.onefootball.com
-
 
 Time format
 ~~~~~~~~~~~
